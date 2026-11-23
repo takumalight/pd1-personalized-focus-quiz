@@ -119,6 +119,24 @@
         font-size: 1.2rem;
         font-weight: 650;
       }
+      .question code,
+      .option-btn code,
+      .explanation code {
+        padding: 0.08em 0.3em;
+        border: 1px solid #40566b;
+        border-radius: 4px;
+        background: #26333e;
+        color: #b6dcf8;
+        font-family:
+          ui-monospace,
+          SFMono-Regular,
+          Menlo,
+          Consolas,
+          monospace;
+        font-size: 0.88em;
+        font-weight: 500;
+        overflow-wrap: anywhere;
+      }
       .options {
         display: grid;
         gap: 0.7rem;
@@ -237,6 +255,12 @@
         font-size: 0.9rem;
         text-align: center;
       }
+      .app-version {
+        margin: 1rem 0 0;
+        color: #888;
+        font-size: 0.85rem;
+        text-align: center;
+      }
       @media (max-width: 540px) {
         body {
           padding: 1.25rem 0.75rem 3rem;
@@ -344,6 +368,8 @@
       <h2 id="past-runs-title">Past Runs</h2>
       <ul id="past-runs-list"></ul>
     </section>
+
+    <footer class="app-version">Version 2026.11.22.2225</footer>
 
     <script src="quiz.js" defer></script>
   </body>

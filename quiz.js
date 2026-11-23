@@ -132,8 +132,12 @@ const sources = {
     "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-intro.html",
   ],
   sandboxes: [
-    "Sandbox Types and Templates",
-    "https://help.salesforce.com/s/articleView?id=sf.data_sandbox_environments.htm&type=5",
+    "Sandbox Licenses and Storage Limits by Type",
+    "https://help.salesforce.com/s/articleView?id=platform.data_sandbox_environments.htm&type=5",
+  ],
+  sandboxClone: [
+    "Create, Clone, or Refresh a Sandbox",
+    "https://help.salesforce.com/s/articleView?id=platform.data_sandbox_create_parent.htm&language=en_US&type=5",
   ],
   changeSets: [
     "Authorize a Deployment Connection",
@@ -204,7 +208,7 @@ const sources = {
     "https://developer.salesforce.com/docs/platform/lwc/guide/use-flow-custom-property-editor.html",
   ],
   vfLightning: [
-    "Visualforce Developer Guide",
+    "Introducing Visualforce",
     "https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/",
   ],
   config: [
@@ -212,12 +216,12 @@ const sources = {
     "https://developer.salesforce.com/docs/platform/lwc/guide/reference-configuration-tags.html",
   ],
   auraEvents: [
-    "Component Event Propagation",
-    "https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/events_component_bubbling.htm",
+    "Handling Bubbled or Captured Component Events",
+    "https://developer.salesforce.com/docs/platform/aura-platform/guide/events-component-bubbling.html",
   ],
   sharing: [
-    "Using the inherited sharing Keyword",
-    "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_keywords_sharing.htm",
+    "Use the with sharing, without sharing, and inherited sharing Keywords",
+    "https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-classes-keywords-sharing.html",
   ],
   extKeys: [
     "External IDs and OData Entity Keys",
@@ -254,6 +258,130 @@ const sources = {
   security: [
     "Enforce Security With the stripInaccessible Method",
     "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_with_security_stripInaccessible.htm",
+  ],
+  dynamicForms: [
+    "Cross-Object Fields in Dynamic Forms",
+    "https://help.salesforce.com/s/articleView?language=en_US&id=platform.dynamic_forms_spanning_fields.htm&type=5",
+  ],
+  schemaBuilder: [
+    "Design Your Own Data Model With Schema Builder",
+    "https://help.salesforce.com/s/articleView?id=platform.schema_builder.htm&type=5",
+  ],
+  schemaBuilderConsiderations: [
+    "Schema Builder Considerations",
+    "https://help.salesforce.com/s/articleView?id=platform.schema_builder_considerations.htm&type=5",
+  ],
+  crossObjectFormula: [
+    "Cross-Object Formulas",
+    "https://help.salesforce.com/s/articleView?id=platform.customize_formulas_cross_object.htm&type=5",
+  ],
+  lookupRollupFlow: [
+    "Create Roll-Up Summary Fields Utilizing Salesforce Flow",
+    "https://help.salesforce.com/s/articleView?language=en_US&id=002722670&type=1",
+  ],
+  testMethods: [
+    "Test Class Reference",
+    "https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-methods-system-test.html",
+  ],
+  testSetup: [
+    "Using Test Setup Methods",
+    "https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-testing-testsetup-using.html",
+  ],
+  customExceptions: [
+    "Create Custom Exceptions",
+    "https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-exception-custom.html",
+  ],
+  scheduler: [
+    "Apex Scheduler",
+    "https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-scheduler.html",
+  ],
+  asyncJobs: [
+    "AsyncApexJob Object Reference",
+    "https://developer.salesforce.com/docs/platform/object-reference/references/standard-objects/object-asyncapexjob.html",
+  ],
+  changeSetOverview: [
+    "Change Sets",
+    "https://help.salesforce.com/s/articleView?id=platform.changesets.htm&type=5",
+  ],
+  cliDeploy: [
+    "Salesforce CLI project deploy start",
+    "https://developer.salesforce.com/docs/platform/salesforce-cli-reference/guide/cli_reference_project_deploy_start.html",
+  ],
+  emailLogs: [
+    "Email Logs",
+    "https://help.salesforce.com/s/articleView?language=en_US&id=sales.emailadmin_monitor_emails_sent_from_salesforce.htm&type=5",
+  ],
+  standardController: [
+    "StandardController Class Reference",
+    "https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-pages-standardcontroller.html",
+  ],
+  standardSetController: [
+    "StandardSetController Class Reference",
+    "https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-pages-standardsetcontroller.html",
+  ],
+  apexPages: [
+    "ApexPages Class Reference",
+    "https://developer.salesforce.com/docs/platform/apex-ref/references/apex-ref/apex-methods-system-apexpages.html",
+  ],
+  vfControllerMethods: [
+    "Visualforce Controller Methods",
+    "https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-controller-methods.html",
+  ],
+  vfGlobalVariables: [
+    "Visualforce Global Variables",
+    "https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-variables-global.html",
+  ],
+  vfPage: [
+    "Visualforce apex:page Component",
+    "https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-compref-page.html",
+  ],
+  vfFunctions: [
+    "Visualforce Functions",
+    "https://developer.salesforce.com/docs/platform/salesforce-pages-developers-guide/guide/pages-variables-functions.html",
+  ],
+  auraBuilder: [
+    "Configure Components for Lightning Pages and the Lightning App Builder",
+    "https://developer.salesforce.com/docs/platform/aura-platform/guide/components-config-for-app-builder.html",
+  ],
+  auraJavaScript: [
+    "Using External JavaScript Libraries",
+    "https://developer.salesforce.com/docs/platform/aura-platform/guide/js-libs-platform.html",
+  ],
+  lwcFiles: [
+    "Create Your First Lightning Web Component",
+    "https://developer.salesforce.com/docs/platform/lwc/guide/get-started-lwc.html",
+  ],
+  lwcOverview: [
+    "Get Started with Lightning Web Components",
+    "https://developer.salesforce.com/docs/platform/lwc/guide/",
+  ],
+  eventsBestPractices: [
+    "Events Best Practices",
+    "https://developer.salesforce.com/docs/platform/lwc/guide/events-best-practices.html",
+  ],
+  eventsPropagation: [
+    "Configure Event Propagation",
+    "https://developer.salesforce.com/docs/platform/lwc/guide/events-propagation.html",
+  ],
+  dynamicSoql: [
+    "Dynamic SOQL",
+    "https://developer.salesforce.com/docs/platform/apex-dev/references/apex-dev/apex-dynamic-soql.html",
+  ],
+  soqlSelect: [
+    "SOQL SELECT Syntax",
+    "https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select.html",
+  ],
+  soqlComparison: [
+    "SOQL Comparison Operators",
+    "https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-select-comparisonoperators.html",
+  ],
+  multiSelectPicklists: [
+    "Query Multi-Select Picklists",
+    "https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-soql-querying-multiselect-picklists.html",
+  ],
+  soslSyntax: [
+    "SOSL Syntax",
+    "https://developer.salesforce.com/docs/platform/salesforce-soql-sosl/guide/sforce-api-calls-sosl-syntax.html",
   ],
 };
 
@@ -748,14 +876,14 @@ add(
 add(
   "Roll-Ups and Formulas",
   "rollups",
-  "Can a formula field reference a Long Text Area field?",
+  "Can a Long Text Area field be used in a roll-up summary filter?",
   "No",
   [
-    "Yes, but only with SUM()",
-    "Yes, when the formula is on the parent",
-    "Only in a validation rule",
+    "Yes, if the filter uses an exact match",
+    "Yes, but only for COUNT roll-ups",
+    "Only when the master is a standard object",
   ],
-  "Formula fields cannot use Long Text Area values as formula inputs.",
+  "Long Text Area fields can’t be used in the field column of roll-up summary filters.",
 );
 add(
   "Roll-Ups and Formulas",
@@ -819,7 +947,7 @@ add(
 );
 add(
   "Roll-Ups and Formulas",
-  "rollups",
+  "dynamicForms",
   "When a parent field is needed on a Lightning record page, what can Dynamic Forms provide?",
   "A way to place fields directly on the page without a cross-object formula",
   [
@@ -867,7 +995,7 @@ add(
 );
 add(
   "Roll-Ups and Formulas",
-  "rollups",
+  "schemaBuilder",
   "Which tool is designed to build or visualize Salesforce object relationships on one screen?",
   "Schema Builder",
   [
@@ -879,7 +1007,7 @@ add(
 );
 add(
   "Roll-Ups and Formulas",
-  "rollups",
+  "schemaBuilderConsiderations",
   "Which task is a Schema Builder limitation noted in the attempt notes?",
   "Setting field-level security directly",
   [
@@ -891,7 +1019,7 @@ add(
 );
 add(
   "Roll-Ups and Formulas",
-  "rollups",
+  "crossObjectFormula",
   "A formula must pull data from a parent record. Which formula feature is intended for this?",
   "Cross-object formula",
   ["Roll-up summary", "External ID", "Trigger context variable"],
@@ -899,7 +1027,7 @@ add(
 );
 add(
   "Roll-Ups and Formulas",
-  "rollups",
+  "lookupRollupFlow",
   "What should you use instead of a roll-up summary when a lookup relationship must remain?",
   "A declarative flow or code-based aggregation pattern",
   [
@@ -1161,7 +1289,7 @@ add(
 );
 add(
   "Flows",
-  "flowSecurity",
+  "operators",
   "Which Flow Get Records operator checks whether a value is in a collection?",
   "In",
   ["Contains All", "Matches Any", "Is Member Of"],
@@ -1194,14 +1322,14 @@ add(
 add(
   "Flows",
   "flowTest",
-  "A record-triggered flow runs only when a checkbox changes from false to true. How should a test exercise that transition?",
-  "Insert the record with false, then update it to true",
+  "Which metadata type represents the configuration of a Salesforce flow test?",
+  "FlowTest",
   [
-    "Insert it already true and do nothing else",
-    "Delete and undelete a true record",
-    "Use only an Apex test factory",
+    "FlowDefinition",
+    "FlowInterview",
+    "FlowRecordRelation",
   ],
-  "The flow's entry criteria require the transition, so the test must perform the false-to-true update.",
+  "FlowTest represents metadata associated with a flow test.",
 );
 add(
   "Flows",
@@ -1250,14 +1378,14 @@ add(
 add(
   "Flows",
   "flowTest",
-  "Why can inserting a record that already meets 'updated to meet conditions' criteria fail to invoke a flow?",
-  "No transition from not-matching to matching occurred on update",
+  "Which required FlowTest field identifies the API name of the flow under test?",
+  "flowApiName",
   [
-    "Insert operations cannot run flows",
-    "The flow can run only in system mode",
-    "The record must first be deleted",
+    "flowVersionNumber",
+    "testType",
+    "label",
   ],
-  "The entry condition specifically depends on the record changing to meet the criteria.",
+  "The FlowTest metadata reference requires flowApiName and defines it as the associated flow’s API name.",
 );
 add(
   "Flows",
@@ -1330,14 +1458,14 @@ add(
 add(
   "Flows",
   "flowTest",
-  "What is the key test behavior for a flow whose criteria depend on an update transition?",
-  "Exercise the transition in the test, not just the final state",
+  "What does the FlowTest testType value WithAssertion specify?",
+  "The test compares the actual flow outcome with an expected outcome defined by assertions",
   [
-    "Set SeeAllData=true",
-    "Call the flow from a getter",
-    "Change the record type only",
+    "The test skips all outcome checks",
+    "The test runs only the flow’s start element",
+    "The test disables flow error handling",
   ],
-  "Testing the transition verifies the flow's actual entry condition.",
+  "WithAssertion indicates an automated comparison of actual and user-defined expected flow outcomes.",
 );
 add(
   "Flows",
@@ -1917,7 +2045,7 @@ add(
 );
 add(
   "Apex Types and Transactions",
-  "database",
+  "customExceptions",
   "How do you instantiate and throw a custom exception with a message?",
   "throw new MyException('message');",
   [
@@ -1929,7 +2057,7 @@ add(
 );
 add(
   "Apex Types and Transactions",
-  "database",
+  "sobject",
   "What is a common way for a trigger to surface a record-specific validation error?",
   "Call addError() on the record or field",
   [
@@ -1965,7 +2093,7 @@ add(
 );
 add(
   "Apex Types and Transactions",
-  "callouts",
+  "database",
   "What does Database.rollback(savepoint) undo?",
   "Uncommitted changes made after that savepoint",
   [
@@ -2042,15 +2170,15 @@ add(
 );
 add(
   "Apex Types and Transactions",
-  "database",
-  "What is the role of try-catch-finally in Apex?",
-  "Handle exceptions and run cleanup logic in finally",
+  "customExceptions",
+  "What is the role of a catch block in Apex?",
+  "Handle an exception thrown while the try block runs",
   [
-    "Bypass all governor limits",
-    "Commit DML even on unhandled errors",
-    "Make every exception recoverable",
+    "Retry every statement in the try block",
+    "Make all exceptions recoverable",
+    "Commit DML after an unhandled exception",
   ],
-  "try-catch handles exceptions and finally runs cleanup regardless of success or failure.",
+  "A catch block handles an exception thrown by code in its associated try block.",
 );
 add(
   "Apex Types and Transactions",
@@ -2099,7 +2227,7 @@ add(
 );
 add(
   "Asynchronous Apex and Events",
-  "queueable",
+  "scheduler",
   "Which Apex type is typically used to run a task on a schedule?",
   "Schedulable Apex",
   [
@@ -2111,7 +2239,7 @@ add(
 );
 add(
   "Asynchronous Apex and Events",
-  "queueable",
+  "scheduler",
   "Which combination is appropriate for processing a large data set nightly?",
   "Batch Apex scheduled by Schedulable Apex",
   [
@@ -2220,7 +2348,7 @@ add(
 );
 add(
   "Asynchronous Apex and Events",
-  "queueable",
+  "asyncJobs",
   "Which object commonly reports status and errors for asynchronous Apex jobs?",
   "AsyncApexJob",
   ["CronTrigger only", "ApexLog", "FlowInterview"],
@@ -2228,7 +2356,7 @@ add(
 );
 add(
   "Asynchronous Apex and Events",
-  "queueable",
+  "scheduler",
   "Which object can be queried to inspect scheduled Apex job status and times triggered?",
   "CronTrigger",
   ["AsyncApexJob only", "ApexClass", "PlatformEventUsageMetric"],
@@ -2317,19 +2445,19 @@ add(
 );
 add(
   "Testing and Test Data",
-  "testing",
-  "Which Apex testing pattern is commonly used?",
-  "Setup, execute, verify",
+  "testMethods",
+  "How many times can a test method call Test.startTest()?",
+  "Once",
   [
-    "Deploy, query, delete",
-    "Compile, debug, commit",
-    "Describe, render, publish",
+    "Twice",
+    "Once for each asynchronous job",
+    "Any number of times",
   ],
-  "Tests prepare data, execute the behavior, and assert outcomes.",
+  "The Test class reference limits each test method to one startTest/stopTest pair.",
 );
 add(
   "Testing and Test Data",
-  "testing",
+  "testMethods",
   "What does Test.startTest() primarily provide?",
   "A fresh governor-limit context for the code under test",
   [
@@ -2341,7 +2469,7 @@ add(
 );
 add(
   "Testing and Test Data",
-  "testing",
+  "testMethods",
   "What happens to asynchronous work enqueued between Test.startTest() and Test.stopTest()?",
   "It is executed during Test.stopTest()",
   [
@@ -2429,7 +2557,7 @@ add(
 );
 add(
   "Testing and Test Data",
-  "testing",
+  "testSetup",
   "What is the purpose of @testSetup?",
   "Create common test data once for test methods in a class",
   [
@@ -2711,19 +2839,19 @@ add(
 );
 add(
   "Deployment and Environments",
-  "models",
-  "Which development model relies on sandboxes and cloud UI deployments?",
-  "Change Set Development",
+  "changeSetOverview",
+  "Which Salesforce feature moves metadata between related orgs using a deployment connection?",
+  "Change Sets",
   [
-    "Package Development",
-    "Scratch Org Development only",
-    "Tooling API Development",
+    "Scratch orgs",
+    "Developer Console",
+    "Lightning Message Service",
   ],
-  "Change Set Development uses sandbox environments and UI-driven change sets.",
+  "Change Sets move metadata customizations between orgs through deployment connections.",
 );
 add(
   "Deployment and Environments",
-  "changeSets",
+  "changeSetOverview",
   "Can a change set deploy between any two unrelated Salesforce orgs?",
   "No; change sets require a deployment connection between related orgs",
   [
@@ -2735,27 +2863,27 @@ add(
 );
 add(
   "Deployment and Environments",
-  "changeSets",
-  "Can change sets delete metadata components?",
-  "No",
+  "metadata",
+  "What does it mean when a metadata type is unsupported by Metadata API?",
+  "It can’t be retrieved or deployed using Metadata API",
   [
-    "Yes, they delete any component by default",
-    "Only in production",
-    "Only for Apex classes",
+    "It can be retrieved but not deployed",
+    "It is deployed automatically after changes",
+    "It is available only through Change Sets",
   ],
-  "Change sets do not support deleting metadata components.",
+  "Unsupported metadata types can’t be retrieved or deployed with Metadata API.",
 );
 add(
   "Deployment and Environments",
-  "dx",
-  "Which tool is suited to scriptable metadata deployment and deletion?",
+  "cliDeploy",
+  "Which tool supports scriptable metadata deployment from a Salesforce DX project?",
   "Salesforce CLI",
   [
     "Change Sets",
     "Schema Builder",
     "Developer Console Checkpoint Inspector",
   ],
-  "Salesforce CLI supports scripted deployments across org types and metadata deletion.",
+  "The Salesforce CLI deploy command deploys metadata from a local project to an org.",
 );
 add(
   "Deployment and Environments",
@@ -2784,38 +2912,42 @@ add(
 add(
   "Deployment and Environments",
   "sandboxes",
-  "Which sandbox is explicitly designed for performance and load testing?",
-  "Full Sandbox",
-  ["Developer Sandbox", "Partial Copy Sandbox", "Scratch org"],
-  "Full sandboxes are intended for performance testing, load testing, and staging.",
+  "What data does a Full Sandbox contain?",
+  "Metadata and all data",
+  ["Metadata only", "Metadata and sample data", "Apex code only"],
+  "The sandbox feature table lists a Full Sandbox as copying metadata and all data.",
 );
 add(
   "Deployment and Environments",
   "sandboxes",
-  "Which sandbox type is commonly used for QA or training with a subset of data?",
-  "Partial Copy Sandbox",
-  ["Full Sandbox", "Developer Sandbox", "Production Sandbox"],
-  "Partial Copy sandboxes support QA/training use and can include a data template.",
+  "What does a Partial Copy Sandbox contain?",
+  "Metadata and sample data",
+  ["Metadata only", "Metadata and all production data", "Apex code only"],
+  "The sandbox feature table lists a Partial Copy Sandbox as copying metadata and sample data.",
 );
 add(
   "Deployment and Environments",
   "sandboxes",
-  "Which sandbox type is characterized by smaller storage and a daily refresh interval?",
-  "Developer Sandbox",
-  ["Full Sandbox", "Partial Copy Sandbox", "Production Sandbox"],
-  "Developer sandboxes have comparatively limited storage and a one-day refresh interval.",
+  "What is the refresh interval for a Developer Sandbox?",
+  "1 day",
+  ["5 days", "29 days", "No scheduled refresh interval"],
+  "The sandbox feature table lists a one-day refresh interval for Developer Sandboxes.",
 );
 add(
   "Deployment and Environments",
   "metadata",
-  "Which setup is not deployable through Metadata API according to the notes?",
-  "Currency exchange rates",
-  ["Global picklists", "Queues", "Fiscal years"],
-  "Currency exchange rates are an unsupported Metadata API type in the cited notes.",
+  "How must you change a Salesforce feature whose metadata type isn't available in Metadata API?",
+  "Make the change manually in each organization",
+  [
+    "Deploy it from a scratch org",
+    "Retrieve it through Salesforce CLI",
+    "Create a managed package for it",
+  ],
+  "Salesforce says unsupported metadata types must be changed manually in each organization.",
 );
 add(
   "Deployment and Environments",
-  "models",
+  "changeSetOverview",
   "Can a Developer Edition org connect directly to production for change set deployments?",
   "No; the connection is through related sandboxes",
   [
@@ -2839,15 +2971,15 @@ add(
 );
 add(
   "Deployment and Environments",
-  "sandboxes",
-  "What is the main benefit of cloning a sandbox?",
-  "It efficiently copies a sandbox's metadata configuration",
+  "sandboxClone",
+  "What does cloning a sandbox do?",
+  "Copies its data and metadata into another sandbox",
   [
     "It deploys records to production",
     "It increases governor limits",
     "It creates a managed package",
   ],
-  "Sandbox cloning is a native method for replicating a sandbox configuration.",
+  "Salesforce describes cloning a sandbox as copying its data and metadata into another sandbox.",
 );
 add(
   "Deployment and Environments",
@@ -2875,7 +3007,7 @@ add(
 );
 add(
   "Deployment and Environments",
-  "email",
+  "emailLogs",
   "Which Salesforce feature provides email delivery logs for troubleshooting?",
   "Email Logs",
   ["System Logs", "ApexLog", "Metadata API"],
@@ -2883,31 +3015,31 @@ add(
 );
 add(
   "Deployment and Environments",
-  "models",
-  "What does a manifest package.xml define in a Salesforce DX project?",
-  "Metadata components included in source operations",
+  "cliDeploy",
+  "Which Salesforce CLI flag overrides the deployment API version with the value from package.xml?",
+  "--api-version",
   [
-    "A user's object permissions",
-    "Apex transaction limits",
-    "Flow run assignments",
+    "--async",
+    "--concise",
+    "--ignore-conflicts",
   ],
-  "The package manifest lists metadata types and members for project operations.",
+  "The deploy command's --api-version flag can use the API version from package.xml.",
 );
 add(
   "Deployment and Environments",
-  "models",
-  "Are Change Sets part of the source-driven Salesforce DX methodology?",
-  "No; they are a traditional UI-based deployment tool",
+  "changeSetOverview",
+  "Can Change Sets deploy record data between organizations?",
+  "No; they move metadata customizations",
   [
-    "Yes, they are the source control system",
-    "Yes, they are required for every CLI deployment",
-    "No, but only because they require REST API",
+    "Yes, all records and files",
+    "Only if records are included in a package.xml file",
+    "Only when deployed by an Apex trigger",
   ],
-  "Change sets are a traditional deployment option, not the core Salesforce DX source-driven model.",
+  "Change Sets transfer metadata customizations, not business record data.",
 );
 add(
   "Deployment and Environments",
-  "models",
+  "cliDeploy",
   "Which deployment option can deploy metadata to unrelated orgs when properly authorized?",
   "Salesforce CLI",
   ["Change Sets", "Schema Builder", "Flow Builder"],
@@ -2916,15 +3048,15 @@ add(
 
 add(
   "Visualforce Controllers",
-  "visualforce",
-  "When is a Visualforce standard controller a natural fit?",
-  "When using standard record behavior or overriding a standard button",
+  "standardController",
+  "What does a Visualforce StandardController reference?",
+  "A pre-built Visualforce controller for a standard or custom object",
   [
-    "When building a custom REST endpoint",
-    "When querying debug logs",
-    "When publishing a platform event from an external system",
+    "A Platform Event trigger",
+    "A Database.SaveResult collection",
+    "A Lightning Message Channel",
   ],
-  "Standard controllers provide standard record operations and are used for page overrides.",
+  "StandardController objects reference Salesforce’s pre-built Visualforce controllers.",
 );
 add(
   "Visualforce Controllers",
@@ -2952,7 +3084,7 @@ add(
 );
 add(
   "Visualforce Controllers",
-  "visualforce",
+  "apexPages",
   "What can ApexPages.currentPage().getParameters().get('id') retrieve?",
   "The id URL parameter",
   [
@@ -2964,7 +3096,7 @@ add(
 );
 add(
   "Visualforce Controllers",
-  "setController",
+  "standardSetController",
   "What happens when a StandardSetController is constructed from a list larger than 10,000 records?",
   "The list is truncated",
   [
@@ -2976,7 +3108,7 @@ add(
 );
 add(
   "Visualforce Controllers",
-  "setController",
+  "standardSetController",
   "What happens when StandardSetController receives a QueryLocator that exceeds its supported record limit?",
   "It throws a LimitException",
   [
@@ -2988,7 +3120,7 @@ add(
 );
 add(
   "Visualforce Controllers",
-  "setController",
+  "standardSetController",
   "Which method indicates whether a StandardSetController list result was truncated?",
   "getCompleteResult()",
   ["getSelected()", "getRecord()", "getFilterId()"],
@@ -2996,7 +3128,7 @@ add(
 );
 add(
   "Visualforce Controllers",
-  "setController",
+  "standardSetController",
   "Which StandardSetController method returns selected rows?",
   "getSelected()",
   ["getRecord()", "getCompleteResult()", "getListViewOptions()"],
@@ -3004,7 +3136,7 @@ add(
 );
 add(
   "Visualforce Controllers",
-  "setController",
+  "standardSetController",
   "What is the purpose of StandardSetController.getRecord()?",
   "Returns a prototype record used for mass updates",
   [
@@ -3028,7 +3160,7 @@ add(
 );
 add(
   "Visualforce Controllers",
-  "visualforce",
+  "vfControllerMethods",
   "When can a Visualforce getter execute?",
   "Whenever the page reads the getter value",
   [
@@ -3040,7 +3172,7 @@ add(
 );
 add(
   "Visualforce Controllers",
-  "visualforce",
+  "vfControllerMethods",
   "Which method transfers Visualforce input values to an Apex controller property?",
   "A setter",
   ["A getter", "A constructor", "A static initializer"],
@@ -3064,7 +3196,7 @@ add(
 );
 add(
   "Visualforce Controllers",
-  "components",
+  "vfGlobalVariables",
   "How can Visualforce access the current user's ProfileId in an expression?",
   "{!$User.ProfileId}",
   [
@@ -3077,18 +3209,18 @@ add(
 add(
   "Visualforce Controllers",
   "vfLightning",
-  "Where can Visualforce pages be embedded or exposed in Lightning Experience?",
-  "For example, in tabs, page layouts, actions, and overrides",
+  "How is Visualforce described in its introduction?",
+  "A tag-based markup language for building applications and customizing Salesforce's user interface",
   [
-    "Only in Apex triggers",
-    "Only in debug logs",
-    "Only in Setup object manager",
+    "A JavaScript framework for database triggers",
+    "A query language for record search",
+    "A metadata format for package installation",
   ],
-  "Visualforce supports several Lightning placements and action/override use cases.",
+  "Salesforce describes Visualforce as a tag-based markup language for building applications and customizing its UI.",
 );
 add(
   "Visualforce Controllers",
-  "visualforce",
+  "vfPage",
   "What is required for a Visualforce page to use a standard controller?",
   "Set standardController to the object API name",
   [
@@ -3120,7 +3252,7 @@ add(
 );
 add(
   "Visualforce Controllers",
-  "visualforce",
+  "vfPage",
   "Which Visualforce page attribute enables PDF rendering?",
   'renderAs="pdf"',
   ['standardController="pdf"', 'transient="true"', 'layout="pdf"'],
@@ -3129,7 +3261,7 @@ add(
 
 add(
   "Apex Security",
-  "accessMode",
+  "sharing",
   "What does with sharing enforce in Apex?",
   "Record-level sharing rules",
   [
@@ -3205,7 +3337,7 @@ add(
 );
 add(
   "Apex Security",
-  "strip",
+  "sharing",
   "What does WITH sharing alone not enforce?",
   "Object-level and field-level permissions",
   [
@@ -3285,43 +3417,43 @@ add(
 );
 add(
   "Apex Security",
-  "security",
-  "Which technique helps prevent SOQL injection when incorporating values into queries?",
-  "Bind variables",
+  "dynamicSoql",
+  "How should variable values be supplied when building a dynamic SOQL query?",
+  "Use bind variables rather than concatenating the values into the query string",
   [
     "Concatenate untrusted text directly",
     "Use a larger heap",
     "Turn off sharing",
   ],
-  "Bind variables separate data from query syntax and are the preferred protection.",
+  "Dynamic SOQL supports bind variables so values can be supplied separately from the query string.",
 );
 add(
   "Apex Security",
-  "security",
-  "What does HTMLENCODE() help protect against when displaying untrusted text?",
-  "Cross-site scripting in HTML output",
+  "vfFunctions",
+  "What does HTMLENCODE() do to text used in Visualforce?",
+  "Encodes reserved HTML characters as HTML entities",
   [
     "SOQL injection in database queries",
     "Governor-limit exceptions",
     "Unauthorized callouts",
   ],
-  "HTML encoding neutralizes markup characters in untrusted content.",
+  "HTMLENCODE replaces characters reserved in HTML with their HTML entity equivalents.",
 );
 add(
   "Apex Security",
-  "security",
-  "What does JSENCODE() help prevent when inserting untrusted text in JavaScript context?",
-  "JavaScript injection/XSS",
+  "vfFunctions",
+  "What does JSENCODE() do to text used in a Visualforce JavaScript context?",
+  "Escapes unsafe JavaScript characters",
   [
     "DML row limit violations",
     "Record sharing bypass",
     "Platform event duplication",
   ],
-  "JavaScript-context encoding protects script output from executable input.",
+  "JSENCODE inserts escape characters before unsafe JavaScript characters.",
 );
 add(
   "Apex Security",
-  "security",
+  "accessMode",
   "Does a user-mode query enforce field permissions in the WHERE clause as well as SELECT fields?",
   "Yes",
   [
@@ -3333,9 +3465,9 @@ add(
 );
 add(
   "Apex Security",
-  "security",
+  "describe",
   "What does a CRUD/FLS check such as isUpdateable() evaluate?",
-  "Whether the current user can update the object or field",
+  "Whether the current user can update the field",
   [
     "Whether the user owns a particular record",
     "Whether the transaction has committed",
@@ -3390,7 +3522,7 @@ add(
 );
 add(
   "Lightning Web Components",
-  "eventsLwc",
+  "eventsBestPractices",
   "What is the recommended default event propagation for the tightest encapsulation?",
   "bubbles: false and composed: false",
   [
@@ -3402,7 +3534,7 @@ add(
 );
 add(
   "Lightning Web Components",
-  "eventsLwc",
+  "eventsPropagation",
   "What does composed: true permit an event to do?",
   "Cross a shadow DOM boundary",
   [
@@ -3414,7 +3546,7 @@ add(
 );
 add(
   "Lightning Web Components",
-  "eventsLwc",
+  "eventsPropagation",
   "What does bubbles: true permit an event to do?",
   "Propagate upward through the DOM",
   [
@@ -3426,7 +3558,7 @@ add(
 );
 add(
   "Lightning Web Components",
-  "eventsLwc",
+  "eventsPropagation",
   "What does bubbles: true with composed: false generally achieve in an LWC?",
   "Bubble within the component's DOM without crossing its shadow boundary",
   [
@@ -3438,7 +3570,7 @@ add(
 );
 add(
   "Lightning Web Components",
-  "eventsLwc",
+  "eventsBestPractices",
   "What should be considered before dispatching bubbles:true, composed:true?",
   "The event becomes part of a public API and can reach ancestors",
   [
@@ -3530,7 +3662,7 @@ add(
 );
 add(
   "Lightning Web Components",
-  "eventsLwc",
+  "eventsPropagation",
   "What does Event.currentTarget identify during event handling?",
   "The element with the listener currently executing",
   [
@@ -3542,7 +3674,7 @@ add(
 );
 add(
   "Lightning Web Components",
-  "eventsLwc",
+  "eventsPropagation",
   "What can event.target represent after an event crosses a shadow boundary?",
   "The component host, due to event retargeting",
   [
@@ -3566,7 +3698,7 @@ add(
 );
 add(
   "Lightning Web Components",
-  "eventsLwc",
+  "eventsBestPractices",
   "Why should event detail generally contain primitives or a copied object?",
   "Listeners could otherwise mutate an object shared by reference",
   [
@@ -3608,18 +3740,18 @@ add(
 add(
   "Aura and UI Integration",
   "auraEvents",
-  "How do Aura application events differ from component events?",
-  "Application events are broadcast across the application",
+  "Which Aura tag registers a component event?",
+  "<aura:registerEvent>",
   [
-    "They are restricted to the child-parent chain",
-    "They only run in the capture phase",
-    "They cannot carry data",
+    "<aura:handler>",
+    "<aura:attribute>",
+    "<aura:method>",
   ],
-  "Application events are broad broadcasts; component events follow propagation phases.",
+  "A component that fires an Aura component event registers it with the aura:registerEvent tag.",
 );
 add(
   "Aura and UI Integration",
-  "auraResources",
+  "auraJavaScript",
   "How should an Aura component load a third-party JavaScript library from a static resource?",
   "Use ltng:require with $Resource",
   [
@@ -3631,7 +3763,7 @@ add(
 );
 add(
   "Aura and UI Integration",
-  "vfLightning",
+  "vfPage",
   'What does lightningStylesheets="true" on a Visualforce page enable?',
   "Lightning styling for supported Visualforce output",
   ["LWC shadow DOM events", "Apex user-mode DML", "Flow orchestration"],
@@ -3663,7 +3795,7 @@ add(
 );
 add(
   "Aura and UI Integration",
-  "auraEvents",
+  "auraBuilder",
   "Which Aura interfaces make a component available on record pages and other page types?",
   "flexipage:availableForRecordHome and flexipage:availableForAllPageTypes",
   [
@@ -3675,7 +3807,7 @@ add(
 );
 add(
   "Aura and UI Integration",
-  "auraEvents",
+  "auraBuilder",
   "What does a design:attribute provide in an Aura component bundle?",
   "A configurable design property for App Builder",
   [
@@ -3687,7 +3819,7 @@ add(
 );
 add(
   "Aura and UI Integration",
-  "lwcGuide",
+  "lwcFiles",
   "Which bundle contains the JavaScript controller for an LWC?",
   "The component's JavaScript file",
   ["The component XML file", "Apex debug log", "A Visualforce extension"],
@@ -3695,7 +3827,7 @@ add(
 );
 add(
   "Aura and UI Integration",
-  "lwcGuide",
+  "lwcFiles",
   "Which bundle contains HTML markup for an LWC UI component?",
   "The component's HTML template file",
   [
@@ -3739,31 +3871,31 @@ add(
 );
 add(
   "Aura and UI Integration",
-  "lwcGuide",
-  "What is the basic structural difference between Aura and LWC bundles?",
-  "Aura uses resources such as component/controller/helper; LWC uses HTML, JavaScript, and optional CSS",
+  "lwcFiles",
+  "Which two source files are used by the basic LWC component example?",
+  "An HTML template and a JavaScript file",
   [
-    "Aura has only HTML; LWC has only Apex",
-    "Both use the exact same bundle files",
-    "LWC requires an SVG renderer",
+    "An Apex class and a Visualforce page",
+    "A CSS file and package.xml",
+    "A Flow definition and an Aura application",
   ],
-  "Aura and LWC have different bundle structures and file conventions.",
+  "The Salesforce LWC getting-started example creates a matching HTML template and JavaScript file.",
 );
 add(
   "Aura and UI Integration",
   "vfLightning",
-  "What is a consequence of overriding a standard button with a Visualforce page?",
-  "The override can reroute that action across the org",
+  "What can Visualforce pages be used to do?",
+  "Build applications and customize the Salesforce user interface",
   [
-    "It changes only one user's record page",
-    "It disables Apex tests",
-    "It changes the object's sharing model",
+    "Replace all Apex classes",
+    "Manage user passwords",
+    "Run database queries without SOQL",
   ],
-  "Standard button overrides affect the action wherever Salesforce uses that override.",
+  "Salesforce describes Visualforce as a way to build applications and customize its user interface.",
 );
 add(
   "Aura and UI Integration",
-  "components",
+  "vfGlobalVariables",
   "Which global variable provides current-user information in Visualforce?",
   "$User",
   ["$Profile", "$CurrentUser", "$SessionUser"],
@@ -3771,15 +3903,15 @@ add(
 );
 add(
   "Aura and UI Integration",
-  "lwcGuide",
-  "Can a service-only LWC omit an HTML template?",
-  "Yes",
+  "lwcOverview",
+  "Which web standard underlies Lightning Web Components?",
+  "Web Components",
   [
-    "No, every LWC must render a template",
-    "Only if it extends Aura",
-    "Only in a scratch org",
+    "Visualforce Components",
+    "SOAP APIs",
+    "Apex Triggers",
   ],
-  "HTML is optional for LWC service components that do not render UI.",
+  "LWC uses core Web Components standards.",
 );
 add(
   "Aura and UI Integration",
@@ -3792,14 +3924,14 @@ add(
 add(
   "Aura and UI Integration",
   "vfLightning",
-  "What is a suitable use of a Visualforce page in a Lightning app?",
-  "Embed it in supported pages, actions, tabs, or overrides",
+  "Which desktop Salesforce experiences support Visualforce pages?",
+  "Lightning Experience and Salesforce Classic",
   [
-    "Use it as a platform-event subscription API",
-    "Replace every LWC service module",
-    "Store persistent Apex static variables",
+    "Salesforce Classic only",
+    "Lightning Experience only",
+    "Developer Console and Data Loader",
   ],
-  "Visualforce can be integrated in multiple Lightning Experience UI locations.",
+  "Visualforce is available in desktop browsers in both Lightning Experience and Salesforce Classic.",
 );
 
 add(
@@ -3912,7 +4044,7 @@ add(
 );
 add(
   "SOQL Relationships and Date Syntax",
-  "soql",
+  "soqlSelect",
   "Which clause filters groups after a SOQL aggregate query?",
   "HAVING",
   ["ORDER BY", "LIMIT", "FOR UPDATE"],
@@ -3920,7 +4052,7 @@ add(
 );
 add(
   "SOQL Relationships and Date Syntax",
-  "soql",
+  "soqlComparison",
   "Which wildcard matches any number of characters in a LIKE filter?",
   "%",
   ["_", "?", "*"],
@@ -3928,7 +4060,7 @@ add(
 );
 add(
   "SOQL Relationships and Date Syntax",
-  "soql",
+  "soqlComparison",
   "Which wildcard matches exactly one character in a SOQL LIKE filter?",
   "_",
   ["%", "?", "*"],
@@ -3936,7 +4068,7 @@ add(
 );
 add(
   "SOQL Relationships and Date Syntax",
-  "soql",
+  "multiSelectPicklists",
   "How do multi-select picklist values appear in SOQL filter matching?",
   "Values are delimited by semicolons",
   [
@@ -3948,19 +4080,19 @@ add(
 );
 add(
   "SOQL Relationships and Date Syntax",
-  "soql",
-  "Which operator requests records whose multi-select picklist contains both specified values?",
-  "AND",
-  ["OR", "INCLUDES NONE", "EXCLUDES ALL"],
-  "Multi-select picklist filtering uses AND/OR semantics to match selected values.",
+  "multiSelectPicklists",
+  "Which SOQL filter matches records whose multi-select picklist contains both A and B?",
+  "INCLUDES ('A;B')",
+  ["INCLUDES ('A', 'B')", "EXCLUDES ('A;B')", "INCLUDES ('A')"],
+  "A semicolon between values inside one INCLUDES string requires all specified values to match.",
 );
 add(
   "SOQL Relationships and Date Syntax",
-  "soql",
-  "Which operator can match a record containing either of specified multi-select picklist values?",
-  "OR",
-  ["AND", "NOT IN", "GROUP BY"],
-  "OR matches records with at least one of the specified values.",
+  "multiSelectPicklists",
+  "Which SOQL filter matches records containing either A or B in a multi-select picklist?",
+  "INCLUDES ('A', 'B')",
+  ["INCLUDES ('A;B')", "EXCLUDES ('A', 'B')", "INCLUDES ('A')"],
+  "Comma-separated strings inside INCLUDES match records containing any specified value.",
 );
 add(
   "SOQL Relationships and Date Syntax",
@@ -3976,7 +4108,7 @@ add(
 );
 add(
   "SOQL Relationships and Date Syntax",
-  "soql",
+  "soslSyntax",
   "Which Salesforce language is used to search across multiple objects by text?",
   "SOSL",
   ["SOQL", "DML", "ApexDoc"],
@@ -3984,19 +4116,19 @@ add(
 );
 add(
   "SOQL Relationships and Date Syntax",
-  "soql",
-  "What type does SOSL search results use for its multiple-object RETURNING results?",
-  "List<List<sObject>>",
+  "soslSyntax",
+  "Which SOSL clause contains the text search expression?",
+  "FIND",
   [
-    "Map<String, Schema.SObjectType>",
-    "Database.SaveResult[]",
-    "List<TriggerOperation>",
+    "RETURNING",
+    "WHERE",
+    "GROUP BY",
   ],
-  "SOSL returns a list of result lists, one per object in the RETURNING clause.",
+  "The FIND clause specifies the text expression SOSL searches for.",
 );
 add(
   "SOQL Relationships and Date Syntax",
-  "soql",
+  "soslSyntax",
   "Which clause specifies which objects and fields SOSL returns?",
   "RETURNING",
   ["GROUP BY", "WITH USER_MODE", "ORDER GROUP"],
@@ -4143,6 +4275,26 @@ function selectWeightedQuestion() {
   return candidates[candidates.length - 1];
 }
 
+const codeReferencePattern =
+  /`[^`]+`|<\/?[A-Za-z][^>]*>|[A-Za-z][A-Za-z0-9-]*="[^"]*"|@[A-Za-z_$][\w$]*|\b(?:WITH\s+(?:USER|SYSTEM)_MODE|(?:[Ww]ith|WITH|[Ww]ithout|WITHOUT|[Ii]nherited|INHERITED)\s+sharing|(?:bubbles|composed)\s*:\s*(?:true|false)|(?:insert|update|delete|upsert)\s+as\s+(?:user|system))\b|(?:[A-Za-z_$][\w$]*(?:\([^()]*\))?\.)+[A-Za-z_$][\w$]*(?:\([^()]*\))?|\b[A-Za-z_$][\w$]*\([^()]*\)|\b[A-Za-z_$][\w$]*__[A-Za-z][\w$]*\b|\b[A-Za-z_$][\w$]*(?:[A-Z][A-Za-z0-9_$]*)+\b|\b[A-Z]{2,}(?:_[A-Z0-9]+)*\b|\b(?:Integer|Decimal|Boolean|String|DateTime|Date|Long|Double|Id|List|Set|Map|sObject|Object)\b/g;
+
+function formattedText(text) {
+  const fragment = document.createDocumentFragment();
+  let cursor = 0;
+  for (const match of text.matchAll(codeReferencePattern)) {
+    const token = match[0];
+    const start = match.index;
+    fragment.append(document.createTextNode(text.slice(cursor, start)));
+    const code = document.createElement("code");
+    code.textContent =
+      token.startsWith("`") ? token.slice(1, -1) : token;
+    fragment.append(code);
+    cursor = start + token.length;
+  }
+  fragment.append(document.createTextNode(text.slice(cursor)));
+  return fragment;
+}
+
 function renderQuestion() {
   clearToast();
   currentQuestion = selectWeightedQuestion();
@@ -4165,7 +4317,7 @@ function renderQuestion() {
   $("topic-label").textContent = currentQuestion.topic;
   $("mastery-label").textContent =
     `Problem mastery: ${masteryFor(currentQuestion)} (-50 to +50)`;
-  $("question-text").textContent = currentQuestion.prompt;
+  $("question-text").replaceChildren(formattedText(currentQuestion.prompt));
   $("feedback").textContent = "";
   $("feedback").className = "feedback";
   $("explanation").style.display = "none";
@@ -4177,7 +4329,10 @@ function renderQuestion() {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "option-btn";
-    button.textContent = `${String.fromCharCode(65 + index)}. ${option.text}`;
+    button.append(
+      document.createTextNode(`${String.fromCharCode(65 + index)}. `),
+      formattedText(option.text),
+    );
     button.addEventListener("click", () => submitAnswer(index));
     options.appendChild(button);
   });
@@ -4255,7 +4410,7 @@ function clearToast() {
 function showExplanation() {
   const box = $("explanation");
   const text = document.createElement("p");
-  text.textContent = currentQuestion.explanation;
+  text.append(formattedText(currentQuestion.explanation));
   const link = document.createElement("a");
   const [label, url] = sources[currentQuestion.source];
   link.href = url;
