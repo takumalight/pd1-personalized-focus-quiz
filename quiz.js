@@ -621,11 +621,7 @@ add(
   "relationships",
   "Which relationship connects a Salesforce child object to a parent external object?",
   "External lookup",
-  [
-    "Indirect lookup",
-    "Hierarchical relationship",
-    "Junction relationship",
-  ],
+  ["Indirect lookup", "Hierarchical relationship", "Junction relationship"],
   "External lookup relationships link Salesforce records to parent records in an external system.",
 );
 add(
@@ -1087,11 +1083,7 @@ add(
   "static",
   "A recursion guard must persist across multiple trigger invocations in one transaction. Where should its static variable live?",
   "In a class",
-  [
-    "Only in the trigger body",
-    "In a Visualforce getter",
-    "In a custom label",
-  ],
+  ["Only in the trigger body", "In a Visualforce getter", "In a custom label"],
   "A class static variable persists across trigger contexts within a transaction; trigger statics have different behavior.",
 );
 add(
@@ -1324,11 +1316,7 @@ add(
   "flowTest",
   "Which metadata type represents the configuration of a Salesforce flow test?",
   "FlowTest",
-  [
-    "FlowDefinition",
-    "FlowInterview",
-    "FlowRecordRelation",
-  ],
+  ["FlowDefinition", "FlowInterview", "FlowRecordRelation"],
   "FlowTest represents metadata associated with a flow test.",
 );
 add(
@@ -1380,11 +1368,7 @@ add(
   "flowTest",
   "Which required FlowTest field identifies the API name of the flow under test?",
   "flowApiName",
-  [
-    "flowVersionNumber",
-    "testType",
-    "label",
-  ],
+  ["flowVersionNumber", "testType", "label"],
   "The FlowTest metadata reference requires flowApiName and defines it as the associated flow’s API name.",
 );
 add(
@@ -1448,11 +1432,7 @@ add(
   "orchestration",
   "What operational detail is associated with a Flow Orchestration stage?",
   "Step completion and assignment information",
-  [
-    "Apex test coverage",
-    "SOQL query plan cost",
-    "Scratch-org expiration date",
-  ],
+  ["Apex test coverage", "SOQL query plan cost", "Scratch-org expiration date"],
   "The run details monitor orchestration stages and steps.",
 );
 add(
@@ -1879,11 +1859,7 @@ add(
   "limits",
   "Which Limits method reports the number of records processed by DML?",
   "Limits.getDMLRows()",
-  [
-    "Limits.getDMLStatements()",
-    "Limits.getQueries()",
-    "Limits.getCpuTime()",
-  ],
+  ["Limits.getDMLStatements()", "Limits.getQueries()", "Limits.getCpuTime()"],
   "DML rows count records processed; DML statements count calls.",
 );
 add(
@@ -2141,11 +2117,7 @@ add(
   "database",
   "What does Database.rollback(savepoint) do?",
   "Rolls back uncommitted changes to the chosen savepoint",
-  [
-    "Commits all work",
-    "Deletes the savepoint only",
-    "Resets governor limits",
-  ],
+  ["Commits all work", "Deletes the savepoint only", "Resets governor limits"],
   "Rollback returns the transaction state to a previously established savepoint.",
 );
 add(
@@ -2161,11 +2133,7 @@ add(
   "dataTypes",
   "What does a List allow that a Set does not?",
   "Ordered elements and duplicate values",
-  [
-    "Key-value associations",
-    "Only unique values",
-    "A built-in SOQL query",
-  ],
+  ["Key-value associations", "Only unique values", "A built-in SOQL query"],
   "Lists are ordered and can contain duplicates; sets enforce uniqueness.",
 );
 add(
@@ -2448,11 +2416,7 @@ add(
   "testMethods",
   "How many times can a test method call Test.startTest()?",
   "Once",
-  [
-    "Twice",
-    "Once for each asynchronous job",
-    "Any number of times",
-  ],
+  ["Twice", "Once for each asynchronous job", "Any number of times"],
   "The Test class reference limits each test method to one startTest/stopTest pair.",
 );
 add(
@@ -2536,11 +2500,7 @@ add(
   "tests",
   "Can Apex tests access User and RecordType metadata by default?",
   "Yes",
-  [
-    "No, never",
-    "Only with SeeAllData=true",
-    "Only if created in @testSetup",
-  ],
+  ["No, never", "Only with SeeAllData=true", "Only if created in @testSetup"],
   "User and RecordType are among setup objects accessible to isolated Apex tests.",
 );
 add(
@@ -2669,11 +2629,7 @@ add(
   "debug",
   "Which Developer Console tool presents a context-sensitive view of log execution?",
   "Log Inspector",
-  [
-    "Checkpoint Inspector",
-    "Schema Builder",
-    "Flow Orchestration Run Details",
-  ],
+  ["Checkpoint Inspector", "Schema Builder", "Flow Orchestration Run Details"],
   "Log Inspector provides panels such as Stack Tree, Execution Log, and Variables.",
 );
 add(
@@ -2689,11 +2645,7 @@ add(
   "console",
   "Which tabs are associated with Checkpoint Inspector?",
   "Heap and Symbols",
-  [
-    "Triggers and Validation",
-    "Flows and Objects",
-    "Queries and Deployments",
-  ],
+  ["Triggers and Validation", "Flows and Objects", "Queries and Deployments"],
   "Checkpoint Inspector includes a Heap tab and a Symbols tab.",
 );
 add(
@@ -2842,11 +2794,7 @@ add(
   "changeSetOverview",
   "Which Salesforce feature moves metadata between related orgs using a deployment connection?",
   "Change Sets",
-  [
-    "Scratch orgs",
-    "Developer Console",
-    "Lightning Message Service",
-  ],
+  ["Scratch orgs", "Developer Console", "Lightning Message Service"],
   "Change Sets move metadata customizations between orgs through deployment connections.",
 );
 add(
@@ -2878,11 +2826,7 @@ add(
   "cliDeploy",
   "Which tool supports scriptable metadata deployment from a Salesforce DX project?",
   "Salesforce CLI",
-  [
-    "Change Sets",
-    "Schema Builder",
-    "Developer Console Checkpoint Inspector",
-  ],
+  ["Change Sets", "Schema Builder", "Developer Console Checkpoint Inspector"],
   "The Salesforce CLI deploy command deploys metadata from a local project to an org.",
 );
 add(
@@ -2890,11 +2834,7 @@ add(
   "changeSets",
   "What must the receiving org do before accepting an inbound change set?",
   "Authorize the deployment connection from the source org",
-  [
-    "Enable SeeAllData",
-    "Create an Apex trigger",
-    "Set the org to System Mode",
-  ],
+  ["Enable SeeAllData", "Create an Apex trigger", "Set the org to System Mode"],
   "The target org must authorize inbound deployments in Deployment Settings.",
 );
 add(
@@ -3018,11 +2958,7 @@ add(
   "cliDeploy",
   "Which Salesforce CLI flag overrides the deployment API version with the value from package.xml?",
   "--api-version",
-  [
-    "--async",
-    "--concise",
-    "--ignore-conflicts",
-  ],
+  ["--async", "--concise", "--ignore-conflicts"],
   "The deploy command's --api-version flag can use the API version from package.xml.",
 );
 add(
@@ -3087,11 +3023,7 @@ add(
   "apexPages",
   "What can ApexPages.currentPage().getParameters().get('id') retrieve?",
   "The id URL parameter",
-  [
-    "The current user's profile name",
-    "A SOQL query result",
-    "A debug level",
-  ],
+  ["The current user's profile name", "A SOQL query result", "A debug level"],
   "Visualforce exposes URL parameters through the current page's parameter map.",
 );
 add(
@@ -3199,11 +3131,7 @@ add(
   "vfGlobalVariables",
   "How can Visualforce access the current user's ProfileId in an expression?",
   "{!$User.ProfileId}",
-  [
-    "{!$Profile.UserId}",
-    "{!$CurrentUser.Profile}",
-    "{!$UserInfo.ProfileId}",
-  ],
+  ["{!$Profile.UserId}", "{!$CurrentUser.Profile}", "{!$UserInfo.ProfileId}"],
   "The $User global variable exposes the current user's fields.",
 );
 add(
@@ -3243,11 +3171,7 @@ add(
   "controllerExtension",
   "What is a standard controller extension constructor typically passed?",
   "The standard controller instance",
-  [
-    "The current debug log",
-    "An SObjectAccessDecision",
-    "A TriggerOperation",
-  ],
+  ["The current debug log", "An SObjectAccessDecision", "A TriggerOperation"],
   "The extension constructor receives ApexPages.StandardController.",
 );
 add(
@@ -3284,11 +3208,7 @@ add(
   "accessMode",
   "How do you specify a user-mode SOQL query?",
   "Add WITH USER_MODE",
-  [
-    "Add WITH SHARING",
-    "Call Schema.userMode()",
-    "Use Database.queryUser()",
-  ],
+  ["Add WITH SHARING", "Call Schema.userMode()", "Use Database.queryUser()"],
   "SOQL supports a WITH USER_MODE clause.",
 );
 add(
@@ -3513,11 +3433,7 @@ add(
   "eventsLwc",
   "Where should a CustomEvent carry its payload?",
   "In the detail property",
-  [
-    "In the event type string",
-    "In bubbles",
-    "In the component's XML targets",
-  ],
+  ["In the event type string", "In bubbles", "In the component's XML targets"],
   "CustomEvent detail carries data to the receiving event handler.",
 );
 add(
@@ -3641,11 +3557,7 @@ add(
   "config",
   "Which target exposes an LWC for a screen flow?",
   "lightning__FlowScreen",
-  [
-    "lightning__FlowAction",
-    "lightning__RecordAction",
-    "lightning__Screen",
-  ],
+  ["lightning__FlowAction", "lightning__RecordAction", "lightning__Screen"],
   "lightning__FlowScreen is the UI target for a screen flow component.",
 );
 add(
@@ -3653,11 +3565,7 @@ add(
   "config",
   "Which target is intended for a headless Flow action component?",
   "lightning__FlowAction",
-  [
-    "lightning__FlowScreen",
-    "lightning__RecordPage",
-    "lightning__Service",
-  ],
+  ["lightning__FlowScreen", "lightning__RecordPage", "lightning__Service"],
   "lightning__FlowAction exposes a component for an action in a flow.",
 );
 add(
@@ -3742,11 +3650,7 @@ add(
   "auraEvents",
   "Which Aura tag registers a component event?",
   "<aura:registerEvent>",
-  [
-    "<aura:handler>",
-    "<aura:attribute>",
-    "<aura:method>",
-  ],
+  ["<aura:handler>", "<aura:attribute>", "<aura:method>"],
   "A component that fires an Aura component event registers it with the aura:registerEvent tag.",
 );
 add(
@@ -3786,11 +3690,7 @@ add(
   "propertyEditor",
   "Which LWC metadata target corresponds to a custom property editor for an action?",
   "lightning__FlowAction",
-  [
-    "lightning__RecordAction",
-    "lightning__FlowScreen",
-    "lightning__AppPage",
-  ],
+  ["lightning__RecordAction", "lightning__FlowScreen", "lightning__AppPage"],
   "Flow action property editors are associated with Flow action components.",
 );
 add(
@@ -3906,11 +3806,7 @@ add(
   "lwcOverview",
   "Which web standard underlies Lightning Web Components?",
   "Web Components",
-  [
-    "Visualforce Components",
-    "SOAP APIs",
-    "Apex Triggers",
-  ],
+  ["Visualforce Components", "SOAP APIs", "Apex Triggers"],
   "LWC uses core Web Components standards.",
 );
 add(
@@ -4099,11 +3995,7 @@ add(
   "soql",
   "What does a parent-to-child relationship query return inside its nested SELECT?",
   "A collection of child records for each parent result",
-  [
-    "A single parent ID",
-    "A Database.SaveResult",
-    "A global describe map",
-  ],
+  ["A single parent ID", "A Database.SaveResult", "A global describe map"],
   "The nested subquery returns related child records for each parent.",
 );
 add(
@@ -4119,11 +4011,7 @@ add(
   "soslSyntax",
   "Which SOSL clause contains the text search expression?",
   "FIND",
-  [
-    "RETURNING",
-    "WHERE",
-    "GROUP BY",
-  ],
+  ["RETURNING", "WHERE", "GROUP BY"],
   "The FIND clause specifies the text expression SOSL searches for.",
 );
 add(
@@ -4174,8 +4062,7 @@ const notice = $("storage-notice");
 
 function isValidState(value) {
   const version = value && (value.version ?? 1);
-  const masteryValues =
-    value && value.mastery && Object.values(value.mastery);
+  const masteryValues = value && value.mastery && Object.values(value.mastery);
   return (
     value &&
     typeof value === "object" &&
@@ -4187,11 +4074,9 @@ function isValidState(value) {
     Number.isInteger(value.allTime.correct) &&
     Number.isInteger(value.allTime.total) &&
     (value.nextRunNumber === undefined ||
-      (Number.isInteger(value.nextRunNumber) &&
-        value.nextRunNumber > 0)) &&
+      (Number.isInteger(value.nextRunNumber) && value.nextRunNumber > 0)) &&
     (value.currentStreak === undefined ||
-      (Number.isInteger(value.currentStreak) &&
-        value.currentStreak >= 0)) &&
+      (Number.isInteger(value.currentStreak) && value.currentStreak >= 0)) &&
     (value.bestStreak === undefined ||
       (Number.isInteger(value.bestStreak) && value.bestStreak >= 0)) &&
     Array.isArray(value.runs) &&
@@ -4218,10 +4103,7 @@ function loadState() {
         "Saved progress has an unexpected format. This session will run without overwriting it; use Reset All Progress only if you want to clear it.";
       return;
     }
-    if (
-      !Number.isInteger(parsed.nextRunNumber) ||
-      parsed.nextRunNumber < 1
-    ) {
+    if (!Number.isInteger(parsed.nextRunNumber) || parsed.nextRunNumber < 1) {
       parsed.nextRunNumber = parsed.runs.length + 1;
     }
     if (parsed.version === undefined || parsed.version === 1) {
@@ -4305,8 +4187,7 @@ function formattedText(text) {
     const start = match.index;
     fragment.append(document.createTextNode(text.slice(cursor, start)));
     const code = document.createElement("code");
-    code.textContent =
-      token.startsWith("`") ? token.slice(1, -1) : token;
+    code.textContent = token.startsWith("`") ? token.slice(1, -1) : token;
     fragment.append(code);
     cursor = start + token.length;
   }
@@ -4409,7 +4290,7 @@ function submitAnswer(index) {
       showToast(
         `Fully mastered! Mastery ${previousMastery} to ${masteryAfterAnswer}. Removed from your pool.`,
       );
-    } else if (fibonacciIndex !== null) {
+    } else if (fibonacciIndex !== null && fibonacciIndex !== 0) {
       showConfetti(Math.min(110, 20 + fibonacciIndex * 5));
       showToast(
         `Correct! Mastery ${previousMastery} to ${masteryAfterAnswer}. ${state.currentStreak} in a row!`,
@@ -4426,8 +4307,7 @@ function submitAnswer(index) {
     `Problem mastery: ${masteryAfterAnswer} (range -50 to +50)`;
   [...$("answer-options").children].forEach((button, optionIndex) => {
     button.disabled = true;
-    if (currentOptions[optionIndex].correct)
-      button.classList.add("correct");
+    if (currentOptions[optionIndex].correct) button.classList.add("correct");
     else if (optionIndex === index) button.classList.add("incorrect");
   });
   $("next-btn").style.display = "inline-block";
@@ -4491,8 +4371,7 @@ function showExplanation() {
 }
 
 function updateScoreboard() {
-  $("run-score").textContent =
-    `${state.run.correct} / ${state.run.total}`;
+  $("run-score").textContent = `${state.run.correct} / ${state.run.total}`;
   const runPct =
     state.run.total ?
       Math.round((state.run.correct / state.run.total) * 100)
@@ -4506,8 +4385,7 @@ function updateScoreboard() {
   const averageMastery =
     questions.reduce((sum, question) => sum + masteryFor(question), 0) /
     questions.length;
-  const formattedAverage =
-    `${averageMastery >= 0 ? "+" : ""}${averageMastery.toFixed(1)}`;
+  const formattedAverage = `${averageMastery >= 0 ? "+" : ""}${averageMastery.toFixed(1)}`;
   $("average-mastery").textContent = `${formattedAverage} / +50`;
   renderRuns();
 }
@@ -4524,8 +4402,7 @@ function renderRuns() {
   }
   state.runs.forEach((run) => {
     const item = document.createElement("li");
-    const pct =
-      run.total ? Math.round((run.correct / run.total) * 100) : 0;
+    const pct = run.total ? Math.round((run.correct / run.total) * 100) : 0;
     item.textContent = `${run.label}: ${run.correct} out of ${run.total} correct (${pct}%)`;
     list.appendChild(item);
   });
