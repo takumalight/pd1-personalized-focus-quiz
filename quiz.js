@@ -4288,7 +4288,7 @@ function submitAnswer(index) {
     if (fullyMastered) {
       showConfetti(120);
       showToast(
-        `Fully mastered! Mastery ${previousMastery} to ${masteryAfterAnswer}. Removed from your pool.`,
+        `Fully mastered! Mastery ${previousMastery} to ${masteryAfterAnswer}.\nRemoved from your pool.`,
       );
     } else if (fibonacciIndex !== null && fibonacciIndex !== 0) {
       showConfetti(Math.min(110, 20 + fibonacciIndex * 5));
