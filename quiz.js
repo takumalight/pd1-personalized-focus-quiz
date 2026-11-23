@@ -4293,7 +4293,7 @@ function submitAnswer(index) {
     } else if (fibonacciIndex !== null && fibonacciIndex !== 0) {
       showConfetti(Math.min(110, 20 + fibonacciIndex * 5));
       showToast(
-        `Correct! Mastery ${previousMastery} to ${masteryAfterAnswer}. ${state.currentStreak} in a row!`,
+        `Correct! Mastery ${previousMastery} to ${masteryAfterAnswer}.\n${state.currentStreak} in a row!`,
       );
     } else {
       showToast(
