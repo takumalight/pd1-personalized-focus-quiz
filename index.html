@@ -200,6 +200,34 @@
       .toast.visible {
         display: block;
       }
+      .confetti-layer {
+        position: fixed;
+        z-index: 9;
+        inset: 0;
+        overflow: hidden;
+        pointer-events: none;
+      }
+      .confetti-piece {
+        position: absolute;
+        top: -1rem;
+        left: var(--left);
+        width: var(--size);
+        height: calc(var(--size) * 1.5);
+        border-radius: var(--radius);
+        background: var(--color);
+        animation: confetti-fall var(--duration) linear var(--delay) forwards;
+      }
+      @keyframes confetti-fall {
+        to {
+          transform: translate3d(var(--drift), 110vh, 0)
+            rotate(var(--rotation));
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .confetti-layer {
+          display: none;
+        }
+      }
       .explanation {
         display: none;
         margin-top: 0.75rem;
@@ -291,6 +319,7 @@
       aria-live="polite"
       aria-atomic="true"
     ></div>
+    <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
 
     <section class="panel scoreboard" aria-labelledby="score-title">
       <h2 id="score-title">Scoreboard</h2>
@@ -327,8 +356,10 @@
       <p class="mastery-note">
         Mastery starts at 0 and ranges from -50 to +50. Correct answers add 5;
         incorrect answers subtract 8. Lower-mastery questions are more likely to
-        appear. Mastery disposition is the average across all questions; unseen
-        questions count as 0, and +50 indicates complete mastery.
+        appear. At +50, a question leaves the pool. Fibonacci streaks (1, 2, 3,
+        5...) trigger confetti, with larger showers for longer streaks. Mastery
+        disposition is averaged across all questions; unseen questions count as
+        0.
       </p>
       <div class="controls">
         <button class="control-btn" id="new-run-btn" type="button">
@@ -369,7 +400,7 @@
       <ul id="past-runs-list"></ul>
     </section>
 
-    <footer class="app-version">Version 2026.11.22.2225</footer>
+    <footer class="app-version">Version 2026.11.23.1730</footer>
 
     <script src="quiz.js" defer></script>
   </body>

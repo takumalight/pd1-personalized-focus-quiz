@@ -4257,11 +4257,30 @@ function masteryFor(question) {
     : INITIAL_MASTERY;
 }
 
+function unmasteredQuestions() {
+  return questions.filter((question) => masteryFor(question) < MAX_MASTERY);
+}
+
+function fibonacciMilestoneIndex(streak) {
+  if (streak === 1) return 0;
+  let previous = 1;
+  let current = 2;
+  let index = 1;
+  while (current <= streak) {
+    if (current === streak) return index;
+    [previous, current] = [current, previous + current];
+    index++;
+  }
+  return null;
+}
+
 function selectWeightedQuestion() {
-  let candidates = questions.filter(
+  const pool = unmasteredQuestions();
+  let candidates = pool.filter(
     (question) => !recentConcepts.includes(question.id),
   );
-  if (candidates.length === 0) candidates = questions;
+  if (candidates.length === 0) candidates = pool;
+  if (candidates.length === 0) return null;
   const weightFor = (question) => MAX_MASTERY - masteryFor(question) + 1;
   const totalWeight = candidates.reduce(
     (sum, question) => sum + weightFor(question),
@@ -4298,6 +4317,22 @@ function formattedText(text) {
 function renderQuestion() {
   clearToast();
   currentQuestion = selectWeightedQuestion();
+  $("next-btn").style.display = "none";
+  $("feedback").textContent = "";
+  $("feedback").className = "feedback";
+  $("explanation").style.display = "none";
+  $("explanation").replaceChildren();
+  const options = $("answer-options");
+  options.replaceChildren();
+  if (!currentQuestion) {
+    $("question-id").textContent = "";
+    $("topic-label").textContent = "";
+    $("mastery-label").textContent = "";
+    $("question-text").textContent =
+      "All questions are fully mastered. Reset progress to practice again.";
+    answered = true;
+    return;
+  }
   currentOptions = [
     { text: currentQuestion.correct, correct: true },
     ...currentQuestion.distractors.map((text) => ({
@@ -4318,13 +4353,6 @@ function renderQuestion() {
   $("mastery-label").textContent =
     `Problem mastery: ${masteryFor(currentQuestion)} (-50 to +50)`;
   $("question-text").replaceChildren(formattedText(currentQuestion.prompt));
-  $("feedback").textContent = "";
-  $("feedback").className = "feedback";
-  $("explanation").style.display = "none";
-  $("explanation").replaceChildren();
-  $("next-btn").style.display = "none";
-  const options = $("answer-options");
-  options.replaceChildren();
   currentOptions.forEach((option, index) => {
     const button = document.createElement("button");
     button.type = "button";
@@ -4346,6 +4374,7 @@ function submitAnswer(index) {
   state.run.total++;
   state.allTime.total++;
   const previousMastery = masteryFor(currentQuestion);
+  let fibonacciIndex = null;
   if (selected.correct) {
     state.run.correct++;
     state.allTime.correct++;
@@ -4355,6 +4384,7 @@ function submitAnswer(index) {
     );
     state.currentStreak++;
     state.bestStreak = Math.max(state.bestStreak, state.currentStreak);
+    fibonacciIndex = fibonacciMilestoneIndex(state.currentStreak);
   } else {
     state.mastery[answeredQuestionId] = Math.max(
       MIN_MASTERY,
@@ -4367,16 +4397,29 @@ function submitAnswer(index) {
     showExplanation();
   }
   const masteryAfterAnswer = state.mastery[answeredQuestionId];
+  const fullyMastered = masteryAfterAnswer === MAX_MASTERY;
   recentConcepts.push(currentQuestion.id);
   if (recentConcepts.length > COOLDOWN) recentConcepts.shift();
   updateScoreboard();
   saveState();
   if (selected.correct) {
     renderQuestion();
-    showToast(
-      `Correct! Mastery ${previousMastery} to ${masteryAfterAnswer}.`,
-    );
-    $("answer-options").firstElementChild.focus();
+    if (fullyMastered) {
+      showConfetti(120);
+      showToast(
+        `Fully mastered! Mastery ${previousMastery} to ${masteryAfterAnswer}. Removed from your pool.`,
+      );
+    } else if (fibonacciIndex !== null) {
+      showConfetti(Math.min(110, 20 + fibonacciIndex * 5));
+      showToast(
+        `Correct! Mastery ${previousMastery} to ${masteryAfterAnswer}. ${state.currentStreak} in a row!`,
+      );
+    } else {
+      showToast(
+        `Correct! Mastery ${previousMastery} to ${masteryAfterAnswer}.`,
+      );
+    }
+    $("answer-options").firstElementChild?.focus();
     return;
   }
   $("mastery-label").textContent =
@@ -4396,6 +4439,32 @@ function showToast(message) {
   toast.textContent = message;
   toast.classList.add("visible");
   toastTimeout = window.setTimeout(clearToast, TOAST_DURATION);
+}
+
+function showConfetti(count) {
+  if (
+    window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  )
+    return;
+  const layer = $("confetti-layer");
+  const colors = ["#ff5252", "#ffd740", "#69f0ae", "#40c4ff", "#e040fb"];
+  for (let i = 0; i < count; i++) {
+    const piece = document.createElement("span");
+    piece.className = "confetti-piece";
+    piece.style.setProperty("--left", `${Math.random() * 100}%`);
+    piece.style.setProperty("--size", `${6 + Math.random() * 7}px`);
+    piece.style.setProperty("--color", colors[i % colors.length]);
+    piece.style.setProperty("--radius", Math.random() > 0.5 ? "50%" : "1px");
+    piece.style.setProperty("--drift", `${(Math.random() - 0.5) * 28}vw`);
+    piece.style.setProperty("--rotation", `${360 + Math.random() * 900}deg`);
+    piece.style.setProperty("--duration", `${2 + Math.random() * 1.5}s`);
+    piece.style.setProperty("--delay", `${Math.random() * 0.7}s`);
+    piece.addEventListener("animationend", () => piece.remove(), {
+      once: true,
+    });
+    layer.appendChild(piece);
+  }
 }
 
 function clearToast() {
@@ -4433,7 +4502,7 @@ function updateScoreboard() {
     `${state.allTime.correct} / ${state.allTime.total}`;
   $("current-streak").textContent = state.currentStreak;
   $("best-streak").textContent = state.bestStreak;
-  $("pool-count").textContent = questions.length.toLocaleString();
+  $("pool-count").textContent = unmasteredQuestions().length.toLocaleString();
   const averageMastery =
     questions.reduce((sum, question) => sum + masteryFor(question), 0) /
     questions.length;
